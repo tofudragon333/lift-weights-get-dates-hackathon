@@ -1,0 +1,2 @@
+class ProgressPhoto < ApplicationRecord
+end

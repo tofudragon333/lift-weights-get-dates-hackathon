@@ -1,0 +1,2 @@
+class ProgressPhotosController < ApplicationController
+end
