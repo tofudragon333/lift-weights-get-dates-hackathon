@@ -12,6 +12,7 @@ class ExercisesController < ApplicationController
     # GET /exercises/:id
     def show
         exercise = Exercise.find(params[:id])
+        render json: exercise
     end
 
     # POST a new exercise for this user
