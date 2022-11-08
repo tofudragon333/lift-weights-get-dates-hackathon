@@ -17,10 +17,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_04_164144) do
     t.integer "prescribed_sets"
     t.integer "prescribed_reps"
     t.integer "prescribed_weight"
-    t.integer "performed_sets"
-    t.integer "peformed_reps"
-    t.integer "performed_weight"
-    t.integer "rest_duration"
+    t.integer "performed_sets", default: 0
+    t.integer "peformed_reps", default: 0
+    t.integer "performed_weight", default: 0
+    t.integer "rest_duration", default: 0
     t.string "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
