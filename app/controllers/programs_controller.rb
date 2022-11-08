@@ -58,6 +58,6 @@ class ProgramsController < ApplicationController
     end
 
     def program_params
-        params.permit(:user_id, :date)
+        params.permit(:user_id, :name, :notes)
     end
 end
