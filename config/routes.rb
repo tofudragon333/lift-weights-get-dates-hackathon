@@ -3,9 +3,11 @@ Rails.application.routes.draw do
   resources :exercises
   resources :progress_photos
   resources :programs
-  resources :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :users, only: [ :create, :show, :update ]
+
+  post "/login", to: "sessions#create"
+  delete "/logout", to: "sessions#destroy"
+  get "/me", to: "users#show"
+  
 end
